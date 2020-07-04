@@ -12,8 +12,7 @@ window.addEventListener('load', ()=> {
 		document.getElementById("wind").innerHTML = res.current.wind_kph+'kph';
 		document.getElementById("precipitation").innerHTML= res.current.precip_mm+'mm';
 		document.getElementById("humidity").innerHTML = res.current.humidity;
-		document.getElementById("temp_logo").src = 'http:'+res.current.condition.icon;
-		console.log('http:'+res.current.condition.icon);
+		document.getElementById("temp_logo").src = 'https:'+res.current.condition.icon;
 	});
 });
 
@@ -34,8 +33,7 @@ document.getElementById("map_marker_button").onclick =function(){
 				document.getElementById("wind").innerHTML = res.current.wind_kph+'kph';
 				document.getElementById("precipitation").innerHTML= res.current.precip_mm+'mm';
 				document.getElementById("humidity").innerHTML = res.current.humidity;
-				document.getElementById("temp_logo").src = 'http:'+res.current.condition.icon;
-				console.log('http:'+res.current.condition.icon);
+				document.getElementById("temp_logo").src = 'https:'+res.current.condition.icon;
 			});
 		});
 	}
@@ -56,9 +54,7 @@ document.getElementById("search_button").onclick =function(){
 		document.getElementById("wind").innerHTML = res.current.wind_kph+'kph';
 		document.getElementById("precipitation").innerHTML= res.current.precip_mm+'mm';
 		document.getElementById("humidity").innerHTML = res.current.humidity;
-		document.getElementById("temp_logo").src = 'http:'+res.current.condition.icon;
-		console.log('http:'+res.current.condition.icon);
-
+		document.getElementById("temp_logo").src = 'https:'+res.current.condition.icon;
 	});
 };
 
