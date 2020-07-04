@@ -78,11 +78,13 @@ document.getElementById("search_button").onclick =function(){
 //to change the measure of temperature
 document.getElementById("celsius_button").onclick= function(){
 	document.getElementById("fahrenheit_button").style.color = "blue";
+	document.getElementById("celsius_button").style.color = "black"
 	document.querySelector(".temp_degree").innerHTML = celsius;
 }
 
 document.getElementById("fahrenheit_button").onclick= function(){
 	document.getElementById("celsius_button").style.color = "blue";
+	document.getElementById("fahrenheit_button").style.color = "black";
 	document.querySelector(".temp_degree").innerHTML = fahrenheit;
 }
 
