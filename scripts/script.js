@@ -3,7 +3,7 @@ let items= Array('Bengaluru', 'Chennai');
 var item = items[Math.floor(Math.random() * items.length)];
 
 window.addEventListener('load', ()=> {
-	const api = 'http://api.weatherapi.com/v1/current.json?key=22c08d9dbf8f458db3753108200407&q='+item;
+	const api = 'https://api.weatherapi.com/v1/current.json?key=22c08d9dbf8f458db3753108200407&q='+item;
 	const data =get_data(api);
 	data_then= data.then(res=>{
 		document.getElementById("location").innerHTML = res.location.name+', '+res.location.region+', '+res.location.country;
@@ -24,7 +24,7 @@ document.getElementById("map_marker_button").onclick =function(){
 			longits=position.coords.longitude;
 			latits = position.coords.latitude;
 
-			const api = 'http://api.weatherapi.com/v1/current.json?key=22c08d9dbf8f458db3753108200407&q='+latits+','+longits;
+			const api = 'https://api.weatherapi.com/v1/current.json?key=22c08d9dbf8f458db3753108200407&q='+latits+','+longits;
 			const data= get_data(api);
 			data_then= data.then(res=>{
 				document.getElementById("location").innerHTML = res.location.name+', '+res.location.region+', '+res.location.country;
@@ -45,7 +45,7 @@ document.getElementById("map_marker_button").onclick =function(){
 //for the search location
 document.getElementById("search_button").onclick =function(){
 	let SearchQuery = document.getElementById("search_query").value;
-	const api = 'http://api.weatherapi.com/v1/current.json?key=22c08d9dbf8f458db3753108200407&q='+SearchQuery;
+	const api = 'https://api.weatherapi.com/v1/current.json?key=22c08d9dbf8f458db3753108200407&q='+SearchQuery;
 	const data =get_data(api);
 	data_then= data.then(res=>{
 		document.getElementById("location").innerHTML = res.location.name+', '+res.location.region+', '+res.location.country;
