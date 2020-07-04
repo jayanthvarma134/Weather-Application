@@ -142,6 +142,27 @@ body {
 	display:flex;
 }
 
+.temp_card_buttons {
+	display:flex;
+}
+
+.temp_card_buttons button {
+	outline:none;
+	margin-left:5px;
+	border:none;
+	font-size: 40px;
+	background:none;
+	cursor:pointer;
+	height: 7vh;
+}
+.temp_card_buttons span {
+	margin-left: 5px;
+}
+
+.fahrenheit{
+	color:blue;
+}
+
 .search_results_card_right {
 	font-size: 22px;
 	padding:15%;
